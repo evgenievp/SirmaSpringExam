@@ -1,0 +1,31 @@
+number;category;question;A;B;C;D;validAnswer
+1;Java;What is JVM?;Java Virtual Machine;Java Version Manager;Java Variable Method;Just Very Magic;A
+2;Java;Which keyword is used to define a class?;class;Class;CLASS;define;A
+3;Java;Which type is used for whole numbers?;int;float;double;String;A
+4;Java;What does JDK stand for?;Java Development Kit;Java Desktop Kit;Just Dev Kit;Java Deploy Kit;A
+5;Java;Which method is the entry point of a Java program?;main;start;run;entry;A
+6;Java;Which operator is used for equality?;==;=;!=;===;A
+7;Java;Which package contains ArrayList?;java.util;java.lang;java.io;java.net;A
+8;Java;Which is not a Java primitive type?;String;int;boolean;char;A
+9;Java;What is the default value of boolean?;false;true;0;null;A
+10;Java;Which statement is used for conditional branching?;if;for;while;switch;A
+11;Spring;Which annotation defines a Spring Bean?;@Component;@Bean;@Service;@Controller;A
+12;Spring;Which annotation is for REST controllers?;@RestController;@Controller;@Service;@Repository;A
+13;Spring;Which object handles HTTP requests?;DispatcherServlet;Servlet;HandlerMapping;ContextLoader;A
+14;Spring;Which annotation injects dependencies?;@Autowired;@Inject;@Resource;@Component;A
+15;Spring;What does @RequestMapping do?;Maps URLs to methods;Maps DB tables;Maps Beans;Maps Services;A
+16;Spring;Which scope creates a single bean per container?;Singleton;Prototype;Request;Session;A
+17;Spring;Which annotation defines a Service layer?;@Service;@Component;@Repository;@Controller;A
+18;Spring;Which file contains Spring configs?;application.properties;web.xml;beans.xml;pom.xml;A
+19;Spring;Which annotation is used for transactions?;@Transactional;@Autowired;@Repository;@Controller;A
+20;Spring;Which annotation is used for repository layer?;@Repository;@Service;@Component;@Controller;A
+21;OOP;What is encapsulation?;Hiding internal state;Inheriting classes;Polymorphic behavior;Abstraction;A
+22;OOP;What is inheritance?;A class derives from another;A class hides data;Changing types at runtime;Binding methods;A
+23;OOP;What is polymorphism?;Objects behaving differently based on type;Same name different packages;Encapsulation mechanism;Class hierarchy;A
+24;OOP;What is abstraction?;Hiding implementation details;Exposing all methods;Copying code;Encapsulation technique;A
+25;OOP;Which keyword allows inheritance?;extends;implements;override;super;A
+26;OOP;Which keyword implements interface?;implements;extends;override;super;A
+27;OOP;What type of variable is accessible only inside the class?;private;public;protected;static;A
+28;OOP;What does `super` refer to?;Parent class instance;Child class instance;Interface reference;Static method;A
+29;OOP;Which principle allows multiple forms of method?;Polymorphism;Encapsulation;Abstraction;Inheritance;A
+30;OOP;What is a constructor?;Method to initialize object;Method to destroy object;Method to override;Method to inherit;A

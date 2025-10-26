@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome page</title>
+</head>
+<body>
+<h1>Welcome to quiz page</h1>
+<div th:if="${quizzes.isEmpty()}">
+    <h1>Still not available quizzes, sorry :)</h1>
+</div>
+<div th:unless="${quizzes.isEmpty()}">
+    <ul>
+        <li th:each="category : ${quizzes}">
+            <form method="post" th:action="@{/show-quiz/{cat}(cat=${category})}">
+                <h3 th:text="${category}">Category: </h3>
+                <button type="submit">Choose</button>
+            </form>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

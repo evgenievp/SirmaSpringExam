@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Page</title>
+</head>
+<body>
+
+<h3 th:if="${question == null}">Empty quiz. Sorry</h3>
+
+<div th:if="${question != null}">
+    <h4 th:text="${question.question}"></h4>
+
+    <form method="post" th:action="@{/show-quiz/{category}(category=${category})}">
+        <ul>
+            <li th:each="entry : ${question.options.entrySet()}">
+                <label>
+                    <input type="radio" name="answer" th:value="${entry.key}" required>
+                    <span th:text="${entry.value}"></span>
+                </label>
+            </li>
+        </ul>
+
+        <input type="hidden" name="currentIdx" th:value="${currentIdx}">
+        <input type="hidden" name="validAnswers" th:value="${validAnswers}" />
+        <button type="submit">Next</button>
+    </form>
+
+    <form th:action="@{/show-quiz/{category}(category=${category})}" method="get">
+        <input type="hidden" name="currentIdx" th:value="${currentIdx - 1}">
+        <input type="hidden" name="validAnswers" th:value="${validAnswers}">
+        <button type="submit" th:if="${currentIdx > 0}">Prev</button>
+    </form>
+
+    <form th:action="@{/show-quiz/{category}(category=${category})}" method="get">
+        <button type="submit">Retake Quiz</button>
+    </form>
+</div>
+
+</body>
+</html>
