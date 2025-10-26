@@ -12,8 +12,11 @@ body {
 }
 
 #quiz-container {
+    overflow: hidden;
+    box-sizing: border-box;
     background-image: url("photos/electronics-form.jpg");
     background-size: cover;
+    border-color: white;
     background-position: center;
     display: block;
     justify-content: center;
@@ -21,8 +24,8 @@ body {
     padding: 30px 40px;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    max-width: 600px;
-    width: 90%;
+    max-width: 70%;
+    width: 100%;
     text-align: center;
 }
 
@@ -34,6 +37,7 @@ h1, h2, h3, h4 {
     border: 1px solid white;
     border-radius: 10px;
     background-color: #39afd0;
+    border-color: black;
     padding: 10px;
 }
 ul {
@@ -42,22 +46,28 @@ ul {
     display: flex;
     justify-self: center;
     align-items: center;
+
 }
 li {
-    border-color: red;
+    border-color: white;
     border: 1px solid;
     padding: 5px;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 15px;
+    border-color: black;
     background-color: #39afd0;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 10px;
 }
 button {
     padding: 10px 20px;
     margin: 5px;
-    border: none;
+    border-color: black;
     display: inline;
     border-radius: 8px;
-    background-color: #39afd0;
+    background-color: #39afd0;;
     color: white;
     font-size: 1em;
     cursor: pointer;
