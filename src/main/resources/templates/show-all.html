@@ -6,11 +6,12 @@
     <title>Welcome page</title>
 </head>
 <body>
-<h1>Welcome to quiz page</h1>
-<div th:if="${quizzes.isEmpty()}">
-    <h1>Still not available quizzes, sorry :)</h1>
-</div>
-<div th:unless="${quizzes.isEmpty()}">
+
+<div th:unless="${quizzes.isEmpty()}" id="quiz-container">
+    <h1>Welcome to quiz page</h1>
+    <div th:if="${quizzes.isEmpty()}">
+        <h1>Still not available quizzes, sorry :)</h1>
+    </div>
     <ul>
         <li th:each="category : ${quizzes}">
             <form method="post" th:action="@{/show-quiz/{cat}(cat=${category})}">

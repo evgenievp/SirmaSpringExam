@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
 <head>
     <meta charset="UTF-8">
     <title>Results page</title>
 </head>
 <body>
+<div id="quiz-container">
     <h2 th:text="'Valid answers: ' + ${validAnswers}"></h2>
     <h3 th:if="${validAnswers == 10}" th:text="'Fascinating! 10/10'"></h3>
     <h3 th:if="${validAnswers > 5 and validAnswers < 10}" th:text="'Good job, but you can do better'"></h3>
     <h3 th:if="${validAnswers < 5}" th:text="'Try again.'"></h3>
     <h2 th:text="'Category: ' + ${category}"></h2>
-    <a th:href="@{/show-quizzes}"><button type="button">Back to quizzes</button></a>
+    <a th:href="@{/show-quizzes}">
+        <button type="button">Back to quizzes</button>
+    </a>
+</div>
 </body>
 </html>

@@ -4,12 +4,20 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-image: url("photos/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0;
 }
 
-.quiz-container {
-    background-color: #ffffff;
+#quiz-container {
+    background-image: url("photos/electronics-form.jpg");
+    background-size: cover;
+    background-position: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
     padding: 30px 40px;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
@@ -19,48 +27,45 @@ body {
 }
 
 
-.quiz-container h4 {
+h1, h2, h3, h4 {
+    color: white;
     margin-bottom: 20px;
     font-size: 1.3em;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #39afd0;
+    padding: 10px;
 }
-
-.quiz-container ul {
+ul {
+    color: white;
     list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
 }
-
-.quiz-container li {
-    margin: 10px 0;
-    text-align: left;
+li {
+    border-color: red;
+    border: 1px solid;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #39afd0;
 }
-
-
-.quiz-container button {
+button {
     padding: 10px 20px;
     margin: 5px;
     border: none;
+    display: inline;
     border-radius: 8px;
-    background-color: #4CAF50;
+    background-color: #39afd0;
     color: white;
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.quiz-container button:hover {
-    background-color: #45a049;
-}
-
-.quiz-container .retake-btn {
-    background-color: #2196F3;
-}
-
-.quiz-container .retake-btn:hover {
-    background-color: #0b7dda;
-}
-
 
 .quiz-container h2, .quiz-container h3 {
     margin: 15px 0;
 }
+

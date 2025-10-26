@@ -7,9 +7,10 @@
 </head>
 <body>
 
-<h3 th:if="${question == null}">Empty quiz. Sorry</h3>
 
-<div th:if="${question != null}">
+
+<div th:if="${question != null}" id="quiz-container">
+    <h3 th:if="${question == null}">Empty quiz. Sorry</h3>
     <h4 th:text="${question.question}"></h4>
 
     <form method="post" th:action="@{/show-quiz/{category}(category=${category})}">
