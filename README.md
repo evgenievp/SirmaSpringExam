@@ -35,7 +35,7 @@ Features
     Questions are loaded from CSV file.
     CSV file is generated with help of AI.
     Basic CSS styling with images for background and form container.
-    Repo with instructions.
+    ReadMe with instructions.
 
    
 How to Run
