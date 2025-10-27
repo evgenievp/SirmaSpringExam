@@ -93,10 +93,7 @@ public class MainController {
 
 
         LinkedList<QuestionModel> questionQuiz = serviceQuiz.getQuestionsByCategory(category);
-        /* Maybe this is bad idea, but I will shuffle questions every time.
-        The reason is required prev button. This would prevent showing same questions.
-         */
-        questionQuiz = serviceQuiz.shuffleQuestions(questionQuiz);
+
         if (currentIdx < questionQuiz.size()) {
             QuestionModel currentQuestion = questionQuiz.get(currentIdx);
 

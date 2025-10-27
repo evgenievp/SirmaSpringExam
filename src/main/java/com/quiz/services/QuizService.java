@@ -51,9 +51,5 @@ public class QuizService {
         return quiz;
     }
 
-    public LinkedList<QuestionModel> shuffleQuestions(LinkedList<QuestionModel> questions) {
-        Collections.shuffle(questions);
-        return questions;
-    }
 
 }

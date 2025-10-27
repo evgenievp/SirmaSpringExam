@@ -31,7 +31,6 @@ Features
 
 5. Bonus Features
 
-   Questions are shuffled every time the quiz is loaded. This functionality ensures that when you go back and forward, you won’t see the same question in the same order.
    Next/Previous buttons for navigating between questions.
     Questions are loaded from CSV file.
     CSV file is generated with help of AI.
