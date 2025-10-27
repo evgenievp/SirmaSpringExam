@@ -24,8 +24,8 @@ body {
     padding: 30px 40px;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    max-width: 70%;
-    width: 100%;
+    width: 80%;
+    height: 60%;
     text-align: center;
 }
 
@@ -42,25 +42,74 @@ h1, h2, h3, h4 {
 }
 ul {
     color: white;
+    box-sizing: border-box;
     list-style: none;
     display: flex;
     justify-self: center;
     align-items: center;
+    width: 100%;
+    height: 50%;
 
 }
-li {
-    border-color: white;
+#question-container {
+    box-sizing: border-box;
+    width: 100%;
+    display:;
+}
+
+#quiz-answers li {
+    box-sizing: border-box;
     border: 1px solid;
     padding: 5px;
     margin: 5px;
+    width: 35%;
+    background-size: cover;
     border-radius: 15px;
     border-color: black;
-    background-color: #39afd0;
+    background-color: black;
     justify-content: center;
     align-items: center;
     align-self: center;
     padding: 10px;
 }
+
+
+li h4 {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#answer-choice {
+    width:100%;
+    height:500%;
+}
+
+#quiz-container-entry {
+    width: 60%;
+    display: block;
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    height: 200px;
+    background-image: url("photos/electronics-form.jpg");
+
+}
+#quiz-container-entry h1 > {
+    width: 50%;
+    align-self: center;
+}
+
+#quiz-container-entry ul {
+    justify-content: center;
+}
+
+.other-buttons {
+    display: flex;
+    justify-content: center;
+}
+
 button {
     padding: 10px 20px;
     margin: 5px;

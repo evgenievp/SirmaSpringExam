@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<div th:unless="${quizzes.isEmpty()}" id="quiz-container">
+<div th:unless="${quizzes.isEmpty()}" id="quiz-container-entry">
     <h1>Welcome to quiz page</h1>
     <div th:if="${quizzes.isEmpty()}">
         <h1>Still not available quizzes, sorry :)</h1>
@@ -15,8 +15,7 @@
     <ul>
         <li th:each="category : ${quizzes}">
             <form method="post" th:action="@{/show-quiz/{cat}(cat=${category})}">
-                <h3 th:text="${category}">Category: </h3>
-                <button type="submit">Choose</button>
+                <button type="submit" th:text="'Select: ' +  ${category}"></button>
             </form>
         </li>
     </ul>

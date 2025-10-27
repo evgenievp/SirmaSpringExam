@@ -50,4 +50,10 @@ public class QuizService {
         cachedCategoryQuizzes.put(category, quiz);
         return quiz;
     }
+
+    public LinkedList<QuestionModel> shuffleQuestions(LinkedList<QuestionModel> questions) {
+        Collections.shuffle(questions);
+        return questions;
+    }
+
 }

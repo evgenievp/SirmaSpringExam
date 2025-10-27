@@ -84,7 +84,6 @@ public class MainController {
             @RequestParam(required = false) Integer currentIdx,
             @RequestParam(required = false) Integer validAnswers) {
 
-
         if (currentIdx == null){
             currentIdx = 0;
         }
@@ -94,6 +93,10 @@ public class MainController {
 
 
         LinkedList<QuestionModel> questionQuiz = serviceQuiz.getQuestionsByCategory(category);
+        /* Maybe this is bad idea, but I will shuffle questions every time.
+        The reason is required prev button. This would prevent showing same questions.
+         */
+        questionQuiz = serviceQuiz.shuffleQuestions(questionQuiz);
         if (currentIdx < questionQuiz.size()) {
             QuestionModel currentQuestion = questionQuiz.get(currentIdx);
 
@@ -107,9 +110,9 @@ public class MainController {
             return "redirect:/quiz-result/" + category + "?validAnswers="  + validAnswers;
         }
 
-
         return "redirect:/show-quiz/" + category + "?currentIdx=" + nextIdx + "&validAnswers=" + validAnswers;
     }
+
 
     @GetMapping("/quiz-result/{category}")
     public String getResults(Model model,

@@ -29,3 +29,83 @@ number;category;question;A;B;C;D;validAnswer
 28;OOP;What does `super` refer to?;Parent class instance;Child class instance;Interface reference;Static method;A
 29;OOP;Which principle allows multiple forms of method?;Polymorphism;Encapsulation;Abstraction;Inheritance;A
 30;OOP;What is a constructor?;Method to initialize object;Method to destroy object;Method to override;Method to inherit;A
+31;Java;Which loop executes at least once?;do-while;for;while;foreach;A
+32;Java;Which keyword stops a loop?;break;stop;exit;return;A
+33;Java;Which modifier makes a variable constant?;final;static;const;immutable;A
+34;Java;Which collection does not allow duplicates?;Set;List;ArrayList;Queue;A
+35;Java;What is the parent of all classes in Java?;Object;Base;Root;Super;A
+36;Java;Which method converts string to int?;Integer.parseInt();toInt();convertInt();Integer.value();A
+37;Java;Which keyword is used to inherit a class?;extends;inherits;derives;uses;A
+38;Java;Which keyword is used to implement an interface?;implements;extends;instanceof;interface;A
+39;Java;What does JVM do?;Executes bytecode;Compiles Java source;Edits code;Runs OS commands;A
+40;Java;Which collection preserves insertion order?;LinkedHashSet;HashSet;TreeSet;PriorityQueue;A
+41;Java;Which keyword is used for inheritance?;extends;super;implements;base;A
+42;Java;Which keyword is used to define a package?;package;import;namespace;define;A
+43;Java;What is garbage collection?;Automatic memory management;Manual cleanup;File deletion;Code optimization;A
+44;Java;What is an interface?;A contract for classes;A concrete class;A static type;An object instance;A
+45;Java;What is the size of int in Java?;4 bytes;2 bytes;8 bytes;Depends on OS;A
+46;Java;Which method compares strings?;equals();compare();==;equalsTo();A
+47;Java;What is exception handling used for?;Manage runtime errors;Speed optimization;UI rendering;Code comments;A
+48;Java;Which block always executes?;finally;catch;try;throw;A
+49;Java;What keyword throws an exception?;throw;throws;try;error;A
+50;Java;What is the superclass of all exceptions?;Throwable;Exception;Error;Object;A
+51;Spring;What does @SpringBootApplication combine?;@Configuration,@EnableAutoConfiguration,@ComponentScan;@Bean,@Component,@Service;@RestController,@RequestMapping,@Repository;@Import,@Export,@EnableWebMvc;A
+52;Spring;Which file contains Spring Boot properties?;application.properties;config.xml;spring.json;app.yml;A
+53;Spring;Which annotation defines configuration class?;@Configuration;@Bean;@Component;@Service;A
+54;Spring;Which dependency injection type uses constructor?;Constructor injection;Setter injection;Field injection;Manual injection;A
+55;Spring;Which annotation starts the app?;@SpringBootApplication;@EnableAutoConfiguration;@Boot;@Run;A
+56;Spring;What port does Spring Boot run on by default?;8080;80;8888;3000;A
+57;Spring;Which dependency manages web apps?;spring-boot-starter-web;spring-core;spring-boot-data;spring-mvc;A
+58;Spring;What annotation maps a GET request?;@GetMapping;@PostMapping;@RequestParam;@PathVariable;A
+59;Spring;Which annotation maps POST requests?;@PostMapping;@GetMapping;@ResponseBody;@RequestBody;A
+60;Spring;What is ResponseEntity used for?;Custom HTTP responses;Logging;Database access;Validation;A
+61;Spring;Which annotation maps a path variable?;@PathVariable;@RequestParam;@Variable;@Mapping;A
+62;Spring;Which annotation handles exceptions globally?;@ControllerAdvice;@Exception;@GlobalHandler;@Advice;A
+63;Spring;Which dependency adds JPA support?;spring-boot-starter-data-jpa;spring-core;spring-data;spring-db;A
+64;Spring;What does @Entity mark?;Database table class;Controller;Service;Configuration;A
+65;Spring;Which annotation injects values from properties file?;@Value;@Autowired;@Inject;@Config;A
+66;Spring;Which file defines Maven dependencies?;pom.xml;build.gradle;application.properties;config.xml;A
+67;Spring;Which annotation runs code at startup?;@PostConstruct;@Startup;@Begin;@AfterInit;A
+68;Spring;What does @Repository do?;Marks DAO class;Marks controller;Marks service;Marks config;A
+69;Spring;Which annotation returns JSON automatically?;@RestController;@Controller;@ResponseView;@JSON;A
+70;Spring;Which annotation is used to test REST API?;@WebMvcTest;@SpringBootTest;@UnitTest;@MockTest;A
+71;OOP;Which principle hides data?;Encapsulation;Inheritance;Polymorphism;Abstraction;A
+72;OOP;Which principle provides a common interface?;Polymorphism;Inheritance;Encapsulation;Overloading;A
+73;OOP;What is method overloading?;Same name, different parameters;Different names, same logic;Same name, same parameters;Same as overriding;A
+74;OOP;What is method overriding?;Redefining parent method;Changing name;Static binding;Creating constructors;A
+75;OOP;Which access modifier allows access everywhere?;public;private;protected;default;A
+76;OOP;Which modifier restricts inheritance?;final;private;static;sealed;A
+77;OOP;Which keyword calls parent constructor?;super;this;base;parent;A
+78;OOP;What is an abstract class?;Class with abstract methods;Interface;Concrete class;Static class;A
+79;OOP;What is an interface in OOP?;A contract;A variable;A constructor;A method;A
+80;OOP;What is an object?;Instance of a class;Variable;Function;Package;A
+81;Java;What is method overloading?;Same name, different params;Same params, different return;Different class;Same class;A
+82;Java;What keyword defines constant variable?;final;static;const;var;A
+83;Java;Which data type stores text?;String;char;int;boolean;A
+84;Java;Which operator is used for concatenation?;+;-;*;/;A
+85;Java;Which keyword defines inheritance?;extends;implements;super;base;A
+86;Java;Which keyword is used for interface implementation?;implements;extends;overrides;super;A
+87;Java;Which exception occurs for null reference?;NullPointerException;ArrayIndexOutOfBounds;IOException;RuntimeError;A
+88;Java;Which keyword defines static method?;static;void;final;class;A
+89;Java;Which statement handles exception?;try-catch;if-else;switch;loop;A
+90;Java;What keyword defines package?;package;namespace;import;class;A
+91;Spring;What is @RestController a combination of?;@Controller and @ResponseBody;@Service and @Bean;@Component and @Autowired;@RequestMapping and @PathVariable;A
+92;Spring;What annotation injects bean automatically?;@Autowired;@Inject;@Bean;@Value;A
+93;Spring;Which starter adds validation support?;spring-boot-starter-validation;spring-core;spring-boot-data;spring-web;A
+94;Spring;Which annotation maps form data?;@RequestParam;@PathVariable;@ResponseBody;@FormParam;A
+95;Spring;Which annotation loads application on startup?;@SpringBootApplication;@EnableAutoConfiguration;@Config;@RunApp;A
+96;Spring;Which file is for Gradle dependencies?;build.gradle;pom.xml;application.yml;settings.gradle;A
+97;Spring;Which annotation creates REST API?;@RestController;@Controller;@ResponseBody;@GetMapping;A
+98;Spring;Which annotation runs after dependency injection?;@PostConstruct;@After;@Run;@Autowired;A
+99;Spring;Which class handles main Spring Boot entry point?;SpringApplication;ApplicationRunner;CommandLineRunner;BootApp;A
+100;Spring;What does @GetMapping("/path") do?;Handles GET request;Handles POST;Maps database;Maps properties;A
+101;OOP;Which principle allows reusing code?;Inheritance;Encapsulation;Polymorphism;Abstraction;A
+102;OOP;Which concept allows many forms?;Polymorphism;Inheritance;Encapsulation;Aggregation;A
+103;OOP;Which method name is same as class?;Constructor;Destructor;Static;Void;A
+104;OOP;What is an instance variable?;Belongs to object;Belongs to class;Belongs to method;Belongs to interface;A
+105;OOP;What is class variable?;Belongs to class;Belongs to object;Local variable;Parameter;A
+106;OOP;Which keyword prevents overriding?;final;static;private;sealed;A
+107;OOP;What is composition?;Has-a relationship;Is-a relationship;Inheritance;Interface;A
+108;OOP;What is aggregation?;Weak has-a;Strong has-a;Inheritance;Encapsulation;A
+109;OOP;Which keyword is used for abstraction?;abstract;interface;super;virtual;A
+110;OOP;Which access modifier is package-private?;default;private;protected;public;A
