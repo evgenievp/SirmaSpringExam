@@ -11,7 +11,8 @@
 <div th:if="${question != null}" id="quiz-container">
     <h3 th:if="${question == null}">Empty quiz. Sorry</h3>
     <form method="post" th:action="@{/show-quiz/{category}(category=${category})}" id="question-container">
-        <h4 th:utext="${question.question} + '<br>' + ${validAnswers} + '/10'"></h4>
+        <h4 th:utext="${question.question}  + '<br>' + 'Correct: ' + ${validAnswers} + '/10'"></h4>
+        <h4 name="currentIdx" th:text="'Question: ' + ${currentIdx} + '/10'"></h4>
         <ul id="quiz-answers">
             <li th:each="entry : ${question.options.entrySet()}" id="answer-choice">
                     <h4 th:text="${entry.value}"></h4>
