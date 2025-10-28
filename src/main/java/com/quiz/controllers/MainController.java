@@ -23,6 +23,8 @@ public class MainController {
 
     @GetMapping("/show-quizzes")
     public String showQuizzes(Model model) {
+        this.serviceQuiz.clearCache();
+        this.serviceQuiz.shuffleQuestions();
         List<String> categories = this.serviceQuiz.getCategories();
         model.addAttribute("quizzes", categories);
         return "show-all";
@@ -116,6 +118,8 @@ public class MainController {
                              @RequestParam int validAnswers,
                              @PathVariable String category){
         model.addAttribute("category", category);
+        LinkedList<QuestionModel> questionQuiz = serviceQuiz.getQuestionsByCategory(category);
+        serviceQuiz.shuffleQuestions();
         model.addAttribute("validAnswers",  validAnswers);
         return "show-results";
     }

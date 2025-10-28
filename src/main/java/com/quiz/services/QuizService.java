@@ -53,8 +53,13 @@ public class QuizService {
     }
 
     public void shuffleQuestions() {
-        Collections.shuffle(allQuestions);
+        LinkedList<QuestionModel> shuffled = new LinkedList<>(this.allQuestions);
+        Collections.shuffle(shuffled);
+        this.allQuestions = shuffled;
     }
 
+    public void clearCache() {
+        cachedCategoryQuizzes.clear();;
+    }
 
 }
