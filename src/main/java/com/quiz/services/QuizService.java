@@ -21,6 +21,7 @@ public class QuizService {
         this.questionsDriver = new CSVQuestionsDriver();
         this.categories = new LinkedList<>();
         this.allQuestions = driver.readAllQuestions();
+        this.shuffleQuestions();
     }
 
     public LinkedList<String> getCategories() {
@@ -49,6 +50,10 @@ public class QuizService {
         LinkedList<QuestionModel> quiz = new LinkedList<>(selected);
         cachedCategoryQuizzes.put(category, quiz);
         return quiz;
+    }
+
+    public void shuffleQuestions() {
+        Collections.shuffle(allQuestions);
     }
 
 
